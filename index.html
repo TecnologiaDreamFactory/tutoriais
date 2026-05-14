@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dream Factory — Central do Colaborador</title>
+  <meta name="description" content="Tutoriais e guias de primeiros passos para colaboradores da Dream Factory." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#inicio" aria-label="Dream Factory — Início">
+        <img src="img/logo.png" alt="Dream Factory" class="brand-logo" />
+      </a>
+
+      <nav class="topnav" id="topnav">
+        <img src="img/logo.png" alt="Dream Factory" class="menu-logo" />
+        <a href="#inicio">Início</a>
+        <a href="#tutoriais">Tutoriais</a>
+        <a href="https://sat.dreamfactory.com.br" target="_blank" rel="noopener" class="nav-cta">Suporte</a>
+      </nav>
+
+      <button type="button" class="menu-toggle" aria-label="Abrir menu" aria-controls="topnav" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo">
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <canvas id="constellation"></canvas>
+      </div>
+      <div class="hero-content">
+        <span class="eyebrow">Bem-vindo(a) ao time</span>
+        <h1>
+          A potência dos<br />
+          <em>encontros</em> começa<br />
+          <span class="grad">por dentro.</span>
+        </h1>
+        <p class="lead">
+          Somos uma plataforma de negócios centrada no entretenimento ao vivo.
+          Esta é a sua central de primeiros passos — tudo o que você precisa
+          para começar com o pé direito na Dream Factory.
+        </p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="#tutoriais">
+            Explorar tutoriais
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-meta">
+        <div><strong id="count-total">0</strong><span>tutoriais</span></div>
+        <div><strong>6</strong><span>categorias</span></div>
+        <div><strong>10+</strong><span>grandes eventos</span></div>
+      </div>
+    </section>
+
+    <!-- BUSCA -->
+    <section class="search-section">
+      <div class="search-wrap">
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+        <input type="search" id="busca" placeholder="O que você procura? (MFA, e-mail, certificado, OneDrive...)" aria-label="Buscar tutorial" />
+        <kbd class="kbd">/</kbd>
+      </div>
+    </section>
+
+    <!-- TUTORIAIS -->
+    <section id="tutoriais" class="tutoriais">
+      <header class="section-head">
+        <span class="eyebrow">Tutoriais</span>
+        <h2>Tudo o que você precisa para começar.</h2>
+      </header>
+
+      <div class="categoria" id="primeiro-acesso">
+        <div class="cat-meta">
+          <div class="cat-num">01</div>
+          <div>
+            <h3>Primeiro Acesso</h3>
+            <p>Configure seu acesso inicial à infraestrutura da Dream.</p>
+          </div>
+        </div>
+        <div class="cards">
+          <article class="card card-accent-1" data-tags="primeiro acesso login senha">
+            <div class="card-top"><span class="card-format">PDF</span></div>
+            <h4>Tutorial Primeiro Acesso</h4>
+            <p>Passo a passo completo para login inicial, senha e setup do computador.</p>
+            <a class="card-link" href="tutos/Primeiro acesso/Tutorial Primeiro Acesso.pdf" target="_blank" rel="noopener">Abrir <span>→</span></a>
+          </article>
+        </div>
+      </div>
+
+      <div class="categoria" id="email">
+        <div class="cat-meta">
+          <div class="cat-num">02</div>
+          <div>
+            <h3>E-mail</h3>
+            <p>Outlook, calendário, backup e contas adicionais.</p>
+          </div>
+        </div>
+        <div class="cards">
+          <article class="card card-accent-2" data-tags="horario trabalho outlook">
+            <div class="card-top"><span class="card-format">PDF</span></div>
+            <h4>Alterar horário de trabalho</h4>
+            <p>Como ajustar seu horário comercial no Outlook.</p>
+            <a class="card-link" href="tutos/E-mail/alterar horario de trabalho.pdf" target="_blank" rel="noopener">Abrir <span>→</span></a>
+          </article>
+          <article class="card card-accent-2" data-tags="backup email bkp pst">
+            <div class="card-top"><span class="card-format">PDF</span></div>
+            <h4>Backup de e-mail</h4>
+            <p>Procedimento para realizar o backup das suas mensagens.</p>
+            <a class="card-link" href="tutos/E-mail/bkp de e-mail.pdf" target="_blank" rel="noopener">Abrir <span>→</span></a>
+          </article>
+          <article class="card card-accent-2" data-tags="conta secundaria outlook">
+            <div class="card-top"><span class="card-format">PDF</span></div>
+            <h4>Conta secundária no Outlook</h4>
+            <p>Como adicionar uma segunda conta de e-mail.</p>
+            <a class="card-link" href="tutos/E-mail/conta segundaria no outlook.pdf" target="_blank" rel="noopener">Abrir <span>→</span></a>
+          </article>
+          <article class="card card-accent-2" data-tags="calendario compartilhar agenda">
+            <div class="card-top"><span class="card-format">PDF</span></div>
+            <h4>Compartilhar calendário</h4>
+            <p>Compartilhe sua agenda com colegas e times.</p>
+            <a class="card-link" href="tutos/E-mail/compartilhar calendário.pdf" target="_blank" rel="noopener">Abrir <span>→</span></a>
+          </article>
+        </div>
+      </div>
+
+      <div class="categoria" id="seguranca">
+        <div class="cat-meta">
+          <div class="cat-num">03</div>
+          <div>
+            <h3>Segurança</h3>
+            <p>Autenticação multifator (MFA) — proteja sua conta.</p>
+          </div>
+        </div>
+        <div class="cards">
+          <article class="card card-accent-3" data-tags="mfa app authenticator 2fa">
+            <div class="card-top"><span class="card-format">PDF</span></div>
+            <h4>MFA via Aplicativo</h4>
+            <p>Configure o autenticador no seu celular para login seguro.</p>
+            <a class="card-link" href="tutos/Segurança/mfa-app.pdf" target="_blank" rel="noopener">Abrir <span>→</span></a>
+          </article>
+          <article class="card card-accent-3" data-tags="mfa sms codigo 2fa">
+            <div class="card-top"><span class="card-format">PDF</span></div>
+            <h4>MFA via SMS</h4>
+            <p>Receba códigos de autenticação por mensagem de texto.</p>
+            <a class="card-link" href="tutos/Segurança/mfa-sms.pdf" target="_blank" rel="noopener">Abrir <span>→</span></a>
+          </article>
+        </div>
+      </div>
+
+      <div class="categoria" id="certificado">
+        <div class="cat-meta">
+          <div class="cat-num">04</div>
+          <div>
+            <h3>Certificado Digital</h3>
+            <p>Instalação e uso do certificado corporativo.</p>
+          </div>
+        </div>
+        <div class="cards">
+          <article class="card card-accent-4" data-tags="certificado digital instalacao">
+            <div class="card-top"><span class="card-format">PDF</span></div>
+            <h4>Instalação de Certificado</h4>
+            <p>Guia completo para instalar o certificado na sua máquina.</p>
+            <a class="card-link" href="tutos/Certificado digital/instalação de certificado.pdf" target="_blank" rel="noopener">Abrir <span>→</span></a>
+          </article>
+        </div>
+      </div>
+
+      <div class="categoria" id="onedrive">
+        <div class="cat-meta">
+          <div class="cat-num">05</div>
+          <div>
+            <h3>OneDrive</h3>
+            <p>Sincronização e gestão dos arquivos na nuvem.</p>
+          </div>
+        </div>
+        <div class="cards">
+          <article class="card card-accent-5" data-tags="onedrive sincronizar pasta nuvem">
+            <div class="card-top"><span class="card-format">PDF</span></div>
+            <h4>Sincronizar pasta</h4>
+            <p>Como sincronizar pastas do OneDrive no computador.</p>
+            <a class="card-link" href="tutos/One Drive/Sincronizar pasta.pdf" target="_blank" rel="noopener">Abrir <span>→</span></a>
+          </article>
+        </div>
+      </div>
+
+      <div class="categoria" id="chamado">
+        <div class="cat-meta">
+          <div class="cat-num">06</div>
+          <div>
+            <h3>Abertura de Chamado</h3>
+            <p>Precisa de suporte? Aprenda a abrir um chamado no SAT.</p>
+          </div>
+        </div>
+        <div class="cards">
+          <article class="card card-accent-6" data-tags="sat chamado suporte ti">
+            <div class="card-top"><span class="card-format">PDF</span></div>
+            <h4>SAT — Abertura de Chamado</h4>
+            <p>Passo a passo para registrar um chamado de suporte.</p>
+            <a class="card-link" href="tutos/Abertura de chamado/sat -abertura de chamado.pdf" target="_blank" rel="noopener">Abrir <span>→</span></a>
+          </article>
+        </div>
+      </div>
+
+      <p id="sem-resultados" class="empty" hidden>Nenhum tutorial encontrado. Tente outros termos.</p>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="sobre">
+      <div class="sobre-grid">
+        <div>
+          <span class="eyebrow">Sobre nós</span>
+          <h2>Onde a Dream Factory está presente.</h2>
+          <p>De maratonas a festivais, de feiras culturais a grandes coberturas — alguns dos eventos e marcas que carregam a nossa assinatura:</p>
+        </div>
+        <ul class="brands">
+          <li>ArtRio</li>
+          <li>CarnaBrasil</li>
+          <li>Rally dos Sertões</li>
+          <li>Maratona do Rio</li>
+          <li>Natal da Lagoa</li>
+          <li>Árvore do Rio</li>
+          <li>Mano a Mano</li>
+          <li>Maratoninha</li>
+          <li>Gank!</li>
+          <li>Glocal</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="rodape">
+      <div class="rodape-inner">
+        <p class="copyright">© Copyright Laboratório de Tecnologia Dream Factory 2026</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
